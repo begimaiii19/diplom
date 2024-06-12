@@ -1,0 +1,52 @@
+/* Contacts.css */
+
+.contacts-container {
+  margin: 20px;
+}
+
+h2 {
+  color: #ff69b4; /* Розовый */
+  text-align: center;
+}
+
+.contacts-table-container {
+  overflow-x: auto;
+}
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #ffe6f2; /* Светло-розовый */
+}
+
+/* Анимация подсветки при наведении */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px 0px #ff69b4; }
+  50% { box-shadow: 0 0 20px 5px #ff69b4; }
+  100% { box-shadow: 0 0 10px 0px #ff69b4; }
+}
+
+tr:hover {
+  animation: glow 1s infinite; /* Запуск анимации при наведении */
+}
+
+/* Эффект свечения */
+@keyframes shine {
+  0% { color: #ff69b4; }
+  50% { color: #f08080; } /* Светло-красный */
+  100% { color: #ff69b4; }
+}
+
+th, td {
+  animation: shine 2s infinite alternate; /* Запуск анимации для ячеек таблицы */
+}

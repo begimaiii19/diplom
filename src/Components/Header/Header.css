@@ -1,0 +1,54 @@
+/* Header.css */
+
+header {
+  padding: 15px 0;
+  font-family: 'Roboto', sans-serif; /* Используем необычный шрифт */
+}
+
+.Head {
+  align-items: center;
+  position: relative;
+  padding-right: 35px;
+  font-family: 'Open Sans', sans-serif; /* Используем красивый шрифт */
+}
+
+.Buttons {
+  margin-left: 10px;
+}
+
+/* Анимация и стиль для иконки корзины */
+.Cart_ic {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url(../../img/cart-ic.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Анимация при наведении */
+}
+
+.Cart_ic:hover {
+  transform: scale(1.1); /* Увеличение при наведении */
+  filter: brightness(1.2); /* Увеличение яркости при наведении */
+}
+
+.Cart_ic span {
+  position: absolute;
+  line-height: 15px;
+  width: 15px;
+  background: #ff69b4; /* Розовый цвет фона */
+  color: #fff;
+  font-weight: 700;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease; /* Анимация при наведении */
+}
+
+.Cart_ic:hover span {
+  background-color: #ffd700; /* Изменение цвета при наведении */
+}

@@ -1,0 +1,66 @@
+/* Обновленный стиль для корзины с необычными красивыми анимациями */
+
+.CartList {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  position: relative; /* Для анимации */
+  transition: transform 0.3s ease; /* Добавление анимации */
+}
+
+.cartItem:last-child {
+  border-bottom: none;
+}
+
+.cartItem img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease; /* Добавление анимации */
+}
+
+.cartItem:hover {
+  transform: scale(1.05); /* Масштабирование при наведении */
+}
+
+.cartItem:hover img {
+  transform: rotate(10deg); /* Поворот изображения при наведении */
+}
+
+.cartItem a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.cartItem .inputs {
+  display: flex;
+  align-items: center;
+}
+
+.cartItem input[type="number"] {
+  width: 50px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.cartItem span {
+  margin-right: 10px;
+}
+
+.cartItem .fa-xmark {
+  cursor: pointer;
+  color: #999;
+}
+
+.cartItem .fa-xmark:hover {
+  color: #ff0000;
+}

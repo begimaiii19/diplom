@@ -1,0 +1,38 @@
+/* Delivery.css */
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #ff69b4;
+    }
+    50% {
+      text-shadow: 0 0 20px #ff69b4;
+    }
+    100% {
+      text-shadow: 0 0 10px #ff69b4;
+    }
+  }
+  
+  .Delivery {
+    font-size: 24px;
+    color: #ff69b4; /* Розовый цвет текста */
+    padding: 20px;
+    background-color: #f8f9fa;
+    animation: fadeIn 1s ease-in-out, glow 2s infinite alternate; /* Анимация появления и свечение */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .delivery_txt{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #242323;
+    font-weight: 700;
+}
+  

@@ -1,0 +1,49 @@
+.Btn {
+  border-radius: 118px;
+  border: 2px solid #2c2f24;
+  transition: 0.3s;
+  color: #182226;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  padding: 12px 24px;
+}
+.Btn:hover {
+  background: #2c2f24;
+  color: #fff;
+}
+.button {
+  background-color: #b7414b; /* Бордовый цвет для кнопок */
+  color: #ffffff; /* Белый текст на кнопках */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative; /* Позиционируем кнопку относительно родительского элемента */
+  overflow: hidden; /* Скрываем все, что выходит за пределы кнопки */
+}
+
+.button::after {
+  content: ''; /* Добавляем пустой контент */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Верхняя граница находится на 50% относительно родителя */
+  left: 50%; /* Левая граница находится на 50% относительно родителя */
+  width: 300%; /* Увеличиваем ширину до 3 раз относительно родителя */
+  height: 300%; /* Увеличиваем высоту до 3 раз относительно родителя */
+  background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый цвет */
+  transition: all 0.5s ease; /* Плавное изменение при наведении */
+  border-radius: 50%; /* Превращаем в круг */
+  z-index: 0; /* Устанавливаем ниже контента кнопки */
+  transform: translate(-50%, -50%) scale(0); /* Полностью сжимаем и перемещаем в центр */
+}
+
+.button:hover::after {
+  transform: translate(-50%, -50%) scale(1); /* Разворачиваем анимацию при наведении */
+}
+
+.button span {
+  position: relative; /* Позиционируем текст относительно родителя */
+  z-index: 1; /* Устанавливаем поверх эффекта свечения */
+}
+  

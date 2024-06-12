@@ -1,0 +1,39 @@
+/* Menu.css */
+
+.Menu {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.Menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu ul li {
+  display: inline;
+  margin-right: 20px;
+  transition: transform 0.3s; /* Добавляем анимацию трансформации */
+}
+
+.Menu ul li:last-child {
+  margin-right: 0;
+}
+
+.Menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s; /* Добавляем анимацию цвета */
+}
+
+.Menu ul li:hover {
+  transform: scale(1.1); /* Увеличиваем размер при наведении */
+}
+
+.Menu ul li a:hover {
+  color: #ff69b4;
+}

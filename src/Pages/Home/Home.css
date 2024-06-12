@@ -1,0 +1,36 @@
+/* Home.css */
+
+.home-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .home-container h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .home-container p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #f73baf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #f1dc17;
+  }
+
+  .img1 {
+   
+  }
+  

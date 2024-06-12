@@ -1,0 +1,15 @@
+/* Logo.css */
+
+.Logo {
+  text-align: center;
+}
+
+.logo {
+  width: 100px; /* Размеры логотипа */
+  height: auto;
+  transition: transform 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.logo:hover {
+  transform: rotate(360deg) scale(1.2); /* Поворот и увеличение при наведении */
+}

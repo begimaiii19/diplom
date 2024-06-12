@@ -1,0 +1,50 @@
+/* Обновленный стиль для категорий с увеличенным шрифтом и необычной анимацией */
+
+.CategoryList {
+    background: rgb(245, 245, 247);
+    padding: 10px 0;
+}
+
+.CategoryList a {
+    display: block;
+    padding: 8px 10px; /* Увеличение отступов */
+    transition: color 0.3s, text-shadow 0.3s;
+    color: #ff69b4; /* Розовый цвет текста */
+    font-size: 18px; /* Увеличение размера шрифта */
+    position: relative; /* Для позиционирования псевдоэлемента */
+}
+
+.CategoryList a:hover {
+    background: rgb(214, 214, 215);
+    text-shadow: 0 0 10px #ff69b4; /* Добавление свечения */
+}
+
+.CategoryList a:active {
+    color: #007bff; /* Цвет текста при нажатии */
+}
+
+.CategoryList a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ff69b4 0%, transparent 80%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1; /* Для отображения под текстом */
+}
+
+.CategoryList a:hover::before {
+    opacity: 1;
+    animation: ripple 1s ease;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
