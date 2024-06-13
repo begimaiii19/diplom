@@ -2,11 +2,16 @@
 
 import React from 'react';
 import './About.css';
+import about from '../../img/Addict24.jpg'
 
 function About() {
   return (
     <section className="About">
       <h2>About Us</h2>
+
+      <div className="About_img">
+        <img src={about} alt="" />
+      </div>
       <p>Welcome to our page!
 
 At [Your Company Name], we're passionate about beauty and skincare. Our mission is to provide you with the highest quality products that enhance your natural beauty and promote healthy skin.

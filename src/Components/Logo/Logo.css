@@ -5,7 +5,7 @@
 }
 
 .logo {
-  width: 100px; /* Размеры логотипа */
+  width: 150px; /* Размеры логотипа */
   height: auto;
   transition: transform 0.3s ease-in-out; /* Анимация при наведении */
 }

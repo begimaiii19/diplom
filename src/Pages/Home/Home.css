@@ -1,36 +1,57 @@
 /* Home.css */
 
+/* Основной контейнер */
 .home-container {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  .home-container h1 {
-    font-size: 36px;
-    color: #333;
-  }
-  
-  .home-container p {
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #f73baf;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #f1dc17;
-  }
+  position: relative;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 20px; /* Отступы для контейнера */
+  background-color: #e24c7e; /* Цвет фона */
+}
 
-  .img1 {
-   
-  }
-  
+/* Видео фон */
+.background-video {
+  width: 110%; /* Увеличение ширины */
+  max-width: none; /* Убедиться, что ширина превышает ширину контейнера */
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  object-fit: cover;
+  margin-bottom: 20px; /* Отступ снизу для видео */
+}
+
+/* Контент, который находится поверх видео */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Стили для изображений */
+.img1 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Отступ снизу для изображения */
+}
+
+/* Стили для текста */
+p {
+  margin: 20px auto;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+/* Стили для кнопок, ссылок и других элементов */
+button, a, div {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Стили для заголовков */
+h1 {
+  margin-bottom: 20px;
+}

@@ -37,7 +37,7 @@
   }
   
   .About-content h2 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 20px;
   }
   
@@ -46,5 +46,33 @@
     margin-bottom: 15px;
   }
   
-  
+  /* About.css */
+
+.About {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.About h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.About_img {
+  float: right; /* Выравнивание изображения по правому краю */
+  margin-left: 20px; /* Отступ слева от изображения */
+  margin-bottom: 20px; /* Отступ снизу от изображения */
+}
+
+.About_img img {
+  max-width: 50%; /* Ограничение ширины изображения до 50% от родительского контейнера */
+  height: auto;
+  display: inline-block;
+}
+
+.About p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
   

@@ -1,29 +1,32 @@
 /* ThankYou.css */
 
+/* Основной контейнер для благодарности */
+.ThankYou {
+  text-align: center;
+  opacity: 0; /* Начальная прозрачность */
+  animation: fadeIn 1s ease forwards; /* Анимация появления */
+}
+
+/* Анимация появления */
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Смещение вверх на 20px */
   }
-  
-  .ThankYou {
-    text-align: center;
-    margin-top: 50px;
-    animation: fadeIn 0.5s ease; /* Применяем анимацию */
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Начальная позиция */
   }
-  
-  .ThankYou h1 {
-    color: #4CAF50;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .ThankYou p {
-    font-size: 18px;
-  }
-  
+}
+
+/* Стили для заголовка */
+.ThankYou h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Стили для текста благодарности */
+.ThankYou p {
+  font-size: 1.2em;
+}
+

@@ -22,7 +22,7 @@
 }
 .popup {
   padding: 20px 50px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .popup form {

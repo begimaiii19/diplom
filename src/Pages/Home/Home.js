@@ -2,12 +2,20 @@
 
 import React from "react";
 import "./Home.css";
+import video from "../../img/video.mp4"
 
 function Home() {
   return (
     <div className="home-container">
-      <h1>SUMMER 2024 COLLECTION</h1>
-      <img className="img1" src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw14e41490/images/beauty/02-MAKEUP/2024/summer-look-2024/SummerLook24_Mood_E-Com_3700x2000-1.jpg" alt="Описание изображения" />
+      <h1>𝐒𝐔𝐌𝐌𝐄𝐑 𝟐𝟎𝟐𝟒 𝐂𝐎𝐋𝐋𝐄𝐂𝐓𝐈𝐎𝐍</h1>
+      {/* Пример сп''иска */}
+      <video width="100%" autoPlay muted>
+        <source src={video} type="video/mp4" />
+      </video>
+      {/* Пример изображения */}
+      <h1>𝐁𝐞𝐚𝐮𝐭𝐲</h1>
+      <img className="img1" src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3871ced3/images/beauty/0-HOME/BEAUTY/2024/4-APRIL/SummerLook24_Model_mu_5550x2000-1.jpg" alt="Описание изображения" />
+
 
       <p>Welcome to the world of beauty and skincare!
 
@@ -32,15 +40,9 @@ Immerse yourself in the world of beauty with us and discover new horizons of sel
       {/* Пример ссылки */}
       <a href="/about"></a>
 
-      {/* Пример изображения */}
-      <img className="img1" src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw3871ced3/images/beauty/0-HOME/BEAUTY/2024/4-APRIL/SummerLook24_Model_mu_5550x2000-1.jpg" alt="Описание изображения" />
-
-      {/* Пример списка */}
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      
+      <img className="img1" src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dw14e41490/images/beauty/02-MAKEUP/2024/summer-look-2024/SummerLook24_Mood_E-Com_3700x2000-1.jpg" alt="Описание изображения" />
+      
     </div>
   );
 }
